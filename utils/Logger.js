@@ -4,13 +4,14 @@ var winston = require('winston');
 
 var winstonLogger = winston.createLogger({
   level: 'info',
-  format: winston.format.json(),
-  defaultMeta: { service: 'user-service' },
+  //format: winston.format.json(),
+  //defaultMeta: { service: 'user-service' },
+  format: winston.format.simple(),
   transports: [
 
     new winston.transports.File({ filename: 'error.log', level: 'error' }),
-    new winston.transports.File({ filename: 'combined.log' })
-    new winston.transports.Console({format: winston.format.simple() })
+    new winston.transports.File({ filename: 'combined.log' }),
+    new winston.transports.Console()
   ]
 });
 

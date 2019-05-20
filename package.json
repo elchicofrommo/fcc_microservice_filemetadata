@@ -22,7 +22,6 @@
     "url": "https://github.com/elchicofrommo/chicoexpress/issues"
   },
   "homepage": "https://github.com/elchicofrommo/chicoexpress#readme",
-
   "dependencies": {
     "chalk": "^2.4.2",
     "cookie-parser": "~1.4.4",

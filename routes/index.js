@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-import logger from '../classes/Logger'
+import logger from '../utils/Logger'
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
