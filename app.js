@@ -8,7 +8,7 @@ var httpLogger = require('morgan');
 
 import indexRouter  from './routes/index';
 import usersRouter  from './routes/users';
-import logger from './classes/Logger'
+import logger from './utils/Logger'
 
 var app = express();
 

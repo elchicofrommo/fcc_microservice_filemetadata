@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 
-import logger from './classes/Logger'
+import logger from './utils/Logger'
 console.log("logger is: " + logger);
 logger.info('Starting hit counter app ... ')
 
