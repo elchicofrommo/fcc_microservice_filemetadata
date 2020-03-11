@@ -25,3 +25,10 @@ beforeAll(async()=> {
 test("Testing can get the UserModel object", ()=>{
 	expect(UserModel).toBeTruthy();
 });
+
+afterAll(async()=>{
+    console.log("closing up shop");
+    await mongoose.connection.close();
+    await mongoServer.stop();
+    console.log("closed");
+});

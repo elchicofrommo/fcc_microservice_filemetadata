@@ -13,7 +13,7 @@ var UserSchema =  new Schema ({
 var UserModel = mongoose.model('User', UserSchema, 'fitness_user');
 
 UserModel.findUser  = async function(userName){
-
+	logger.verbose("test message");
 	let toReturn = undefined;
 	try{
 		toReturn = await User.findOne({user_name: userName}).select('user_name user_id -_id');
